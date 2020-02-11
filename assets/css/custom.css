@@ -1,0 +1,44 @@
+
+/* Header Css */
+.navbar-brand img {
+    height: 80px;
+}
+
+.navbar-transparent .navbar-brand {
+    font-size: 35px;
+    color: black;
+}
+
+.navbar-transparent .navbar-brand:hover, .navbar-transparent .navbar-brand:focus {
+    color: rgba(0, 0, 0, 0.95);
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.navbar-transparent .navbar-nav .nav-link:hover, .navbar-transparent .navbar-nav .nav-link:focus {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.navbar-transparent .navbar-nav .nav-link {
+    color: black;
+}
+
+.headroom--not-top {
+    background-color: #ffffffd6 !important;
+}
+
+/* Slider Css*/
+.section-shaped .shape-style-1.shape-default {
+    background: unset;
+}
+
+.hero-section{
+    background-image: url("../img/bg/slider.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}

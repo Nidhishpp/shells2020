@@ -7,6 +7,7 @@
     <meta name="description" content="Shells is an inter-collegiate fest hosted by 
                 Kristu Jayanti College, Dept. of Computer Science [PG]">
     <meta name="author" content="Kristu Jayanti College, Dept. of Computer Science [PG]">
+    <meta name="keywords" content="shells, shells2020, kjc, kjc shells, Kristu Jayanti College Shells 2020">
     <title>Shells - Inter-Collegiate Fest</title>
     <?php include('includes/head.php'); ?>
 </head>

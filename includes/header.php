@@ -45,6 +45,11 @@
                             <span class="nav-link-inner--text">Schedule</span>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="register.php" class="nav-link" role="button">
+                            <span class="nav-link-inner--text">Register</span>
+                        </a>
+                    </li>
                     <!-- <li class="nav-item dropdown">
                         <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
                             <i class="ni ni-ui-04 d-lg-none"></i>

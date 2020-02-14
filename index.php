@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with a Design System for Bootstrap 4.">
-    <meta name="author" content="Creative Tim">
+    <meta name="description" content="Shells is an inter-collegiate fest hosted by 
+                Kristu Jayanti College, Dept. of Computer Science [PG]">
+    <meta name="author" content="Kristu Jayanti College, Dept. of Computer Science [PG]">
     <title>Shells - Inter-Collegiate Fest</title>
     <?php include('includes/head.php'); ?>
 </head>

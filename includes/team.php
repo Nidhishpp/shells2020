@@ -8,73 +8,106 @@
             </div>
         </div>
         <div class="row justify-content-md-center">
-            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+            <div class="col-md-6 col-lg-4 mb-md">
                 <div class="px-4">
-                    <img src="assets/img/theme/team-1-800x800.jpg"
+                    <img src="assets/img/team/jyothi.jpg"
                         class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;"
                         data-tilt>
                     <div class="pt-4 text-center">
                         <h5 class="title">
-                            <span class="d-block mb-1">Ryan Tompson</span>
-                            <small class="h6 text-muted">Web Developer</small>
+                            <span class="d-block mb-1">Dr. Jyothi Manoj</span>
+                            <small class="h6 text-muted">Faculty Co-ordinators</small>
                         </h5>
                         <div class="mt-3">
-                            <a href="#" class="btn btn-warning btn-icon-only rounded-circle">
-                                <i class="fa fa-twitter"></i>
+                            <a href="tel:+919480090226" class="btn btn-warning btn-icon-only rounded-circle">
+                                <i class="fa fa-phone"></i>
                             </a>
-                            <a href="#" class="btn btn-warning btn-icon-only rounded-circle">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            <a href="#" class="btn btn-warning btn-icon-only rounded-circle">
-                                <i class="fa fa-dribbble"></i>
+                            <a href="mailto:jyothimanoj@kristujayanti.com" class="btn btn-warning btn-icon-only rounded-circle">
+                                <i class="fa fa-envelope"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+            <div class="col-md-6 col-lg-4 mb-md">
                 <div class="px-4">
-                    <img src="assets/img/theme/team-3-800x800.jpg"
+                    <img src="assets/img/team/james.jpg"
                         class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;"
                         data-tilt>
                     <div class="pt-4 text-center">
                         <h5 class="title">
-                            <span class="d-block mb-1">Alexander Smith</span>
-                            <small class="h6 text-muted">UI/UX Designer</small>
+                            <span class="d-block mb-1">Mr. James Thomas</span>
+                            <small class="h6 text-muted">Student Co-ordinator</small>
                         </h5>
                         <div class="mt-3">
-                            <a href="#" class="btn btn-info btn-icon-only rounded-circle">
-                                <i class="fa fa-twitter"></i>
+                            <a href="tel:+918157037723" class="btn btn-info btn-icon-only rounded-circle">
+                                <i class="fa fa-phone"></i>
                             </a>
-                            <a href="#" class="btn btn-info btn-icon-only rounded-circle">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            <a href="#" class="btn btn-info btn-icon-only rounded-circle">
-                                <i class="fa fa-dribbble"></i>
+                            <a href="mailto:18CS701003@kristujayanti.com" class="btn btn-info btn-icon-only rounded-circle">
+                                <i class="fa fa-envelope"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+            <div class="col-md-6 col-lg-4 mb-md">
                 <div class="px-4">
-                    <img src="assets/img/theme/team-4-800x800.jpg"
+                    <img src="assets/img/team/neha.jpg"
                         class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;"
                         data-tilt>
                     <div class="pt-4 text-center">
                         <h5 class="title">
-                            <span class="d-block mb-1">John Doe</span>
-                            <small class="h6 text-muted">Founder and CEO</small>
+                            <span class="d-block mb-1">Ms. Neha E. Prince</span>
+                            <small class="h6 text-muted">Student Co-ordinator</small>
                         </h5>
                         <div class="mt-3">
-                            <a href="#" class="btn btn-success btn-icon-only rounded-circle">
-                                <i class="fa fa-twitter"></i>
+                            <a href="tel:+919718960145" class="btn btn-success btn-icon-only rounded-circle">
+                                <i class="fa fa-phone"></i>
                             </a>
-                            <a href="#" class="btn btn-success btn-icon-only rounded-circle">
-                                <i class="fa fa-facebook"></i>
+                            <a href="mailto:18CS601016@kristujayanti.com" class="btn btn-success btn-icon-only rounded-circle">
+                                <i class="fa fa-envelope"></i>
                             </a>
-                            <a href="#" class="btn btn-success btn-icon-only rounded-circle">
-                                <i class="fa fa-dribbble"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-md">
+                <div class="px-4">
+                    <img src="assets/img/team/melvin.jpg"
+                        class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;"
+                        data-tilt>
+                    <div class="pt-4 text-center">
+                        <h5 class="title">
+                            <span class="d-block mb-1">Mr. Melvin Ebenezer</span>
+                            <small class="h6 text-muted">Student Co-ordinator</small>
+                        </h5>
+                        <div class="mt-3">
+                            <a href="tel:+919902253676" class="btn btn-danger btn-icon-only rounded-circle">
+                                <i class="fa fa-phone"></i>
+                            </a>
+                            <a href="mailto:18CS601030@kristujayanti.com" class="btn btn-danger btn-icon-only rounded-circle">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-md">
+                <div class="px-4">
+                    <img src="assets/img/team/sherlin.jpg"
+                        class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;"
+                        data-tilt>
+                    <div class="pt-4 text-center">
+                        <h5 class="title">
+                            <span class="d-block mb-1">Ms. Sherlin Susanna Shaji</span>
+                            <small class="h6 text-muted">Student Co-ordinator</small>
+                        </h5>
+                        <div class="mt-3">
+                            <a href="tel:+919916080172" class="btn btn-primary btn-icon-only rounded-circle">
+                                <i class="fa fa-phone"></i>
+                            </a>
+                            <a href="mailto:19CS602004@kristujayanti.com" class="btn btn-primary btn-icon-only rounded-circle">
+                                <i class="fa fa-envelope"></i>
                             </a>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 <header class="header-global">
     <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
         <div class="container">
-            <a class="navbar-brand mr-lg-5" href="index.html">
+            <a class="navbar-brand mr-lg-5" href="index.php">
                 <img src="assets/img/logo/shells-logo.png">
                 SHELLS 2020
             </a>
@@ -14,7 +14,7 @@
                     <div class="row">
                         <div class="col-6 collapse-brand">
                             <a href="index.html">
-                                <img src="assets/img/brand/blue.png">
+                                <img src="assets/img/logo/shells-logo.png"> SHELLS 2020
                             </a>
                         </div>
                         <div class="col-6 collapse-close">
@@ -30,8 +30,22 @@
                 <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
                 </ul>
                 <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
+                        <a href="index.php" class="nav-link" role="button">
+                            <span class="nav-link-inner--text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events.php" class="nav-link" role="button">
+                            <span class="nav-link-inner--text">Events</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="schedule.php" class="nav-link" role="button">
+                            <span class="nav-link-inner--text">Schedule</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
                         <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
                             <i class="ni ni-ui-04 d-lg-none"></i>
                             <span class="nav-link-inner--text">Components</span>
@@ -73,8 +87,8 @@
                                 </a>
                             </div>
                         </div>
-                    </li>
-                    <li class="nav-item dropdown">
+                    </!-->
+                    <!-- <li class="nav-item dropdown">
                         <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
                             <i class="ni ni-collection d-lg-none"></i>
                             <span class="nav-link-inner--text">Examples</span>
@@ -85,36 +99,36 @@
                             <a href="examples/login.html" class="dropdown-item">Login</a>
                             <a href="examples/register.html" class="dropdown-item">Register</a>
                         </div>
-                    </li>
+                    </li>  -->
                     <li class="nav-item">
-                        <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank"
+                        <a class="nav-link nav-link-icon" href="https://www.facebook.com/ShellsITfest" target="_blank"
                             data-toggle="tooltip" title="Like us on Facebook">
                             <i class="fa fa-facebook-square"></i>
                             <span class="nav-link-inner--text d-lg-none">Facebook</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial"
+                        <a class="nav-link nav-link-icon" href="https://www.instagram.com/shells__2020/"
                             target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
                             <i class="fa fa-instagram"></i>
                             <span class="nav-link-inner--text d-lg-none">Instagram</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank"
                             data-toggle="tooltip" title="Follow us on Twitter">
                             <i class="fa fa-twitter-square"></i>
                             <span class="nav-link-inner--text d-lg-none">Twitter</span>
                         </a>
-                    </li>
-                    <li class="nav-item">
+                    </li> -->
+                    <!-- <li class="nav-item">
                         <a class="nav-link nav-link-icon"
                             href="https://github.com/creativetimofficial/argon-design-system" target="_blank"
                             data-toggle="tooltip" title="Star us on Github">
                             <i class="fa fa-github"></i>
                             <span class="nav-link-inner--text d-lg-none">Github</span>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>

@@ -1,6 +1,7 @@
 <div class="position-relative hero-section">
     <!-- shape Hero -->
-    <section class="section section-lg section-shaped pb-250">
+    <img src="assets/img/bg/slider.png" alt="">
+    <!-- <section class="section section-lg section-shaped pb-250"> -->
         <!-- <div class="container py-lg-md d-flex">
             <div class="col px-0">
                 <div class="row">
@@ -27,6 +28,6 @@
                 <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
             </svg>
         </div> -->
-    </section>
+    <!-- </section> -->
     <!-- 1st Hero Variation -->
 </div>

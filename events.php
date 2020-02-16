@@ -124,7 +124,7 @@
             </div>
         </section>
 
-        <section class="section pb-lg-xl pt-lg-xl pt-6" id="events">
+        <section class="section pb-lg-xl pt-lg-xl pt-6">
             <div class="container">
                 <div class="row justify-content-center text-center mb-md">
                     <div class="col-lg-8">
@@ -303,6 +303,7 @@
                 <div class="modal-body event-model">
 
                     <ul class="list-unstyled rules">
+                        <li>1 Team per college with 4 members in the team.</li>
                         <li>Participants must bring mobile phones with PUBG installed, have mobile data and earphones
                             for participation in round 1 (No Emulator).</li>
                         <li>For 2nd & 3rd round Blur & Counter Strike - Participants can bring mouse, keyboard, joystick
@@ -374,7 +375,7 @@
                         <li>The decision of the judges is binding and final</li>
                     </ul>
                     <p>Student Coordinator</p>
-                    <p> <strong>Mr. Mini M Varghese</strong> </p>
+                    <p> <strong>Ms. Mini M Varghese</strong> </p>
                     <p><a href="tel:+919916942400"> <strong> +91 9916942400</strong></a></p>
                 </div>
 
@@ -410,8 +411,8 @@
                         <strong>* Mandatory</strong>
                     </ul>
                     <p>Student Coordinator</p>
-                    <p> <strong>Mr. Shobhan Manik PP</strong> </p>
-                    <p><a href="tel:+919036489285"> <strong> +91 9036489285</strong></a></p>
+                    <p> <strong>Mr. Shobhan Manik</strong> </p>
+                    <p><a href="tel:+918660202874"> <strong> +91 8660202874</strong></a></p>
                 </div>
 
                 <div class="modal-footer">

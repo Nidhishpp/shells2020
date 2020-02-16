@@ -124,6 +124,42 @@
             </div>
         </section>
 
+        <section class="section pb-lg-xl pt-lg-xl pt-6" id="events">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-md">
+                    <div class="col-lg-8">
+                        <h2 class="display-3">General <strong>Rules</strong> </h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <ul class="rule-list">
+                            <li class="text-muted">Students pursuing MCA, Msc (IT or Computer Science), B.Tech, BE,
+                                M.Tech, ME are eligible to
+                                participate.</li>
+                            <li class="text-muted">1 Team per College; Maximum of 15 participants per Team.</li>
+                            <li class="text-muted">College ID card is mandatory.</li>
+                            <li class="text-muted">Participants should be present at the venue before 5 minutes of
+                                commencement of events.</li>
+                            <li class="text-muted">Registration fee for individual participant is Rs. 200 (Inclusive of
+                                GST). Group Registration fee of Rs.
+                                2500 for 13 or more participants of the same institution.</li>
+                            <li class="text-muted">Participant of Coding event have to pay an extra Rs. 200 for
+                                registration. Participant of Coding event
+                                should be from the 15 member team.</li>
+                            <li class="text-muted">Participants of Coding should come in formal attire.</li>
+                            <li class="text-muted">Paid accommodation would be provided on request.</li>
+                            <li class="text-muted">It is the discretion of the selected participants to prioritize /
+                                choose the event in which they wish to
+                                participate.</li>
+                            <li class="text-muted">Any act of Indiscipline will lead to disqualification from the
+                                events.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <div class="modal fade" id="model1" tabindex="-1" role="dialog" aria-labelledby="model1" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-lg" role="document">

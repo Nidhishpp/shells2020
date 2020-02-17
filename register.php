@@ -1,4 +1,53 @@
-<!DOCTYPE html>
+<?php
+if(isset($_POST['register-button']))
+{
+    require("connection.php");
+    
+    if (filter_input(INPUT_POST, "contact-email", FILTER_VALIDATE_EMAIL) === false) 
+    {
+        echo'<script>alert("Email is not valid");</script>';
+    } 
+    else
+    {
+     
+        $query="SELECT * FROM registration WHERE contact_email= '".filter_var($_POST['contact-email'], FILTER_SANITIZE_EMAIL)."' OR contact_phone=".$_POST['contact-phone'];
+        $result=mysqli_query($connection, $query);
+        if (!$result) 
+             echo '<script>alert("Registration Unsucessful: '. mysqli_error($connection).'");</script>';
+        else
+        {
+            if(mysqli_num_rows($result) == 0)
+            {
+                $query="insert into registration(college_name, contact_email, contact_phone, total_participant";
+                for($i=1;$i<=filter_var($_POST['participants-count'], FILTER_SANITIZE_NUMBER_INT);$i++)
+                    $query=$query.", participant".$i;
+    
+                $query=$query.") values('"
+                        . filter_var($_POST['college-name'], FILTER_SANITIZE_STRING)."','"
+                        .filter_var($_POST['contact-email'], FILTER_SANITIZE_EMAIL)."',"
+                        .$_POST['contact-phone'].","
+                        .filter_var($_POST['participants-count'], FILTER_SANITIZE_NUMBER_INT);
+    
+                for($i=1;$i<=filter_var($_POST['participants-count'], FILTER_SANITIZE_NUMBER_INT);$i++)
+                $query=$query.",'".filter_var($_POST['participant-'.$i], FILTER_SANITIZE_STRING)."'";
+    
+                $query=$query.")";
+  
+    
+                if (mysqli_query($connection, $query)) 
+                    echo'<script>alert("Registration Sucessful. Thank you for registering.");</script>';
+                else
+                    echo '<script>alert("Registration Unsucessful: '. mysqli_error($connection).'");</script>';
+            }
+            else
+            {
+                echo'<script>alert("Email or/and phone number exists");</script>';
+            }
+        }
+    }
+    mysqli_close($connection);
+}
+?>
 <html>
 
 <head>
@@ -15,6 +64,7 @@
             document.getElementById("part-count").innerText = 1;
             document.getElementById("partcount").value = 1;
         }
+        
         function showNext(part) {
             document.getElementById("add-p" + part).style.visibility = "hidden";
             document.getElementById("add-p" + part).style.display = "none";
@@ -24,6 +74,16 @@
             document.getElementById("partcount").value = part;
             return true;
         }
+        
+        function blockQuotes(e)
+        {
+            var k;
+            document.all ? k = e.keyCode : k = e.which;
+            return((k != 34 && k != 96 && k != 39));
+        }
+        
+        
+
     </script>
 </head>
 
@@ -44,13 +104,13 @@
                     <div class="col-lg-5">
                         <div class="card bg-secondary shadow border-0">
                             <div class="card-header bg-white pb-5">
-                                <form role="form">
+                                <form role="form" name="register" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                                     <div class="form-group focused">
                                         <div class="input-group input-group-alternative">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="College Name" autofocus type="text" required name="college-name">
+                                            <input class="form-control" placeholder="College Name" autofocus type="text" required name="college-name" onkeypress="return blockQuotes(event)">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -58,7 +118,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Contact Email" type="email" required name="contact-email">
+                                            <input class="form-control" placeholder="Contact Email" type="email" required name="contact-email" onkeypress="return blockQuotes(event)">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -66,7 +126,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-mobile-button"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Contact Phone" type="text" required name="contact-phone">
+                                            <input class="form-control" placeholder="Contact Phone" type="tel" required  name="contact-phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" oninvalid="this.setCustomValidity('Enter valid format eg. 9876543210')" oninput="this.setCustomValidity('')">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -74,7 +134,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Participant 1" type="text" required name="participant-1">
+                                            <input class="form-control" placeholder="Participant 1" type="text" required name="participant-1" onkeypress="return blockQuotes(event)">
                                         </div>
                                         <a onclick="return showNext(2)" class="btn btn-neutral btn-icon mr-4" id="add-p2">
                                             <span class="btn-inner--text"><strong>+</strong> &nbsp;Add Participant</span>
@@ -85,7 +145,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Participant 2" type="text" name="participant-2">
+                                            <input class="form-control" placeholder="Participant 2" type="text" name="participant-2" onkeypress="return blockQuotes(event)">
                                         </div>
                                         <a onclick="showNext(3)" class="btn btn-neutral btn-icon mr-4" id="add-p3">
                                             <span class="btn-inner--text"><strong>+</strong> &nbsp;Add Participant</span>
@@ -96,7 +156,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Participant 3" type="text" name="participant-3">
+                                            <input class="form-control" placeholder="Participant 3" type="text" name="participant-3" onkeypress="return blockQuotes(event)">
                                         </div>
                                         <a onclick="showNext(4)" class="btn btn-neutral btn-icon mr-4" id="add-p4">
                                             <span class="btn-inner--text"><strong>+</strong> &nbsp;Add Participant</span>
@@ -107,7 +167,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Participant 4" type="text" name="participant-4">
+                                            <input class="form-control" placeholder="Participant 4" type="text" name="participant-4" onkeypress="return blockQuotes(event)">
                                         </div>
                                         <a onclick="showNext(5)" class="btn btn-neutral btn-icon mr-4" id="add-p5">
                                             <span class="btn-inner--text"><strong>+</strong> &nbsp;Add Participant</span>
@@ -118,7 +178,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Participant 5" type="text" name="participant-5">
+                                            <input class="form-control" placeholder="Participant 5" type="text" name="participant-5" onkeypress="return blockQuotes(event)">
                                         </div>
                                         <a onclick="showNext(6)" class="btn btn-neutral btn-icon mr-4" id="add-p6">
                                             <span class="btn-inner--text"><strong>+</strong> &nbsp;Add Participant</span>
@@ -129,7 +189,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Participant 6" type="text" name="participant-6">
+                                            <input class="form-control" placeholder="Participant 6" type="text" name="participant-6" onkeypress="return blockQuotes(event)">
                                         </div>
                                         <a onclick="showNext(7)" class="btn btn-neutral btn-icon mr-4" id="add-p7">
                                             <span class="btn-inner--text"><strong>+</strong> &nbsp;Add Participant</span>
@@ -140,7 +200,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Participant 7" type="text" name="participant-7">
+                                            <input class="form-control" placeholder="Participant 7" type="text" name="participant-7" onkeypress="return blockQuotes(event)">
                                         </div>
                                         <a onclick="showNext(8)" class="btn btn-neutral btn-icon mr-4" id="add-p8">
                                             <span class="btn-inner--text"><strong>+</strong> &nbsp;Add Participant</span>
@@ -151,7 +211,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Participant 8" type="text" name="participant-8">
+                                            <input class="form-control" placeholder="Participant 8" type="text" name="participant-8" onkeypress="return blockQuotes(event)">
                                         </div>
                                         <a onclick="showNext(9)" class="btn btn-neutral btn-icon mr-4" id="add-p9">
                                             <span class="btn-inner--text"><strong>+</strong> &nbsp;Add Participant</span>
@@ -162,7 +222,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Participant 9" type="text" name="participant-9">
+                                            <input class="form-control" placeholder="Participant 9" type="text" name="participant-9" onkeypress="return blockQuotes(event)">
                                         </div>
                                         <a onclick="showNext(10)" class="btn btn-neutral btn-icon mr-4" id="add-p10">
                                             <span class="btn-inner--text"><strong>+</strong> &nbsp;Add Participant</span>
@@ -173,7 +233,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Participant 10" type="text" name="participant-10">
+                                            <input class="form-control" placeholder="Participant 10" type="text" name="participant-10" onkeypress="return blockQuotes(event)">
                                         </div>
                                         <a onclick="showNext(11)" class="btn btn-neutral btn-icon mr-4" id="add-p11">
                                             <span class="btn-inner--text"><strong>+</strong> &nbsp;Add Participant</span>
@@ -184,7 +244,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Participant 11" type="text" name="participant-11">
+                                            <input class="form-control" placeholder="Participant 11" type="text" name="participant-11" onkeypress="return blockQuotes(event)">
                                         </div>
                                         <a onclick="showNext(12)" class="btn btn-neutral btn-icon mr-4" id="add-p12">
                                             <span class="btn-inner--text"><strong>+</strong> &nbsp;Add Participant</span>
@@ -195,7 +255,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Participant 12" type="text" name="participant-12">
+                                            <input class="form-control" placeholder="Participant 12" type="text" name="participant-12" onkeypress="return blockQuotes(event)">
                                         </div>
                                         <a onclick="showNext(13)" class="btn btn-neutral btn-icon mr-4" id="add-p13">
                                             <span class="btn-inner--text"><strong>+</strong> &nbsp;Add Participant</span>
@@ -206,7 +266,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Participant 13" type="text" name="participant-13">
+                                            <input class="form-control" placeholder="Participant 13" type="text" name="participant-13" onkeypress="return blockQuotes(event)">
                                         </div>
                                         <a onclick="showNext(14)" class="btn btn-neutral btn-icon mr-4" id="add-p14">
                                             <span class="btn-inner--text"><strong>+</strong> &nbsp;Add Participant</span>
@@ -217,7 +277,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Participant 14" type="text" name="participant-14">
+                                            <input class="form-control" placeholder="Participant 14" type="text" name="participant-14" onkeypress="return blockQuotes(event)">
                                         </div>
                                         <a onclick="showNext(15)" class="btn btn-neutral btn-icon mr-4" id="add-p15">
                                             <span class="btn-inner--text"><strong>+</strong> &nbsp;Add Participant</span>
@@ -228,7 +288,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                                             </div>
-                                            <input class="form-control" placeholder="Participant 15" type="text" name="participant-15">
+                                            <input class="form-control" placeholder="Participant 15" type="text" name="participant-15" onkeypress="return blockQuotes(event)">
                                         </div>
                                     </div>
 
@@ -237,7 +297,7 @@
                                         <small> Participants: <span id="part-count">1</span></small>
                                     </div>
                                     <div class="text-center">
-                                        <button type="button" class="btn btn-primary mt-4" style="margin-top: 10px !important">Register</button>
+                                        <input type="submit" class="btn btn-primary mt-4"  value="Register" name="register-button" style="margin-top: 10px !important">
                                     </div>
                                 </form>
                             </div>

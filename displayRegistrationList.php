@@ -63,6 +63,9 @@ if(isset($_POST['Submit']))
                 $j++;
             }
             echo"</table>";
+            
+            unset($_POST['password']);
+            unset($_POST['Submit']);
 
         }
 }

@@ -166,7 +166,6 @@ if(isset($_POST['contact-email']))
                                                         <td role="modules-container" style="padding:0px 0px 0px 0px; color:#FFFFFF; text-align:left;" bgcolor="#f2f4fb" width="100%" align="left"><table class="module preheader preheader-hide" role="module" data-type="preheader" border="0" cellpadding="0" cellspacing="0" width="100%" style="display: none !important; mso-hide: all; visibility: hidden; opacity: 0; color: transparent; height: 0; width: 0;">
                         <tbody><tr>
                         <td role="module-content">
-                        <p>You\'ve found the secret!</p>
                         </td>
                         </tr>
                         </tbody></table><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="670741c7-08d7-46cf-9f68-83dd4fa673dc">

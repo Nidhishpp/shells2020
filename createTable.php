@@ -1,8 +1,8 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "us-cdbr-iron-east-04.cleardb.net";
+$username = "b26153b5a08219";
+$password = "fe073154";
 
 
 $conn = mysqli_connect($servername, $username, $password);
@@ -11,15 +11,15 @@ if (!$conn) {
 }
 
 
-$query = "CREATE DATABASE shells2020";
-if (mysqli_query($conn, $query)) {
-    echo "Database created successfully";
-} else {
-    echo "Error creating database: " . mysqli_error($conn);
-}
+// $query = "CREATE DATABASE shells2020";
+// if (mysqli_query($conn, $query)) {
+//     echo "Database created successfully";
+// } else {
+//     echo "Error creating database: " . mysqli_error($conn);
+// }
 
 
-mysqli_select_db($conn,"shells2020");
+mysqli_select_db($conn,"heroku_ba68f91c8dee117");
 
 $query = "CREATE TABLE registration (
 college_name VARCHAR(300) NOT NULL, 

@@ -83,7 +83,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                                             </div>
-                                            <input class="form-control part" placeholder="Participant 1" type="text"
+                                            <input class="form-control part" placeholder="Participant 1 *" type="text"
                                                 required name="participant-1" onkeypress="return blockQuotes(event)">
                                         </div>
                                         <a onclick="return showNext(2)" class="btn btn-neutral btn-icon mr-4"
@@ -275,6 +275,9 @@
                                         id="partcount" value="1" />
                                     <div class="text-muted text-center">
                                         <small> Participants: <span id="part-count">1</span></small>
+                                    </div>
+                                    <div class="text-muted text-center">
+                                        <small> *1 Participant compulsary for coding.</small>
                                     </div>
                                     <div class="text-center">
                                         <input type="submit" class="btn btn-primary mt-4" value="Register"

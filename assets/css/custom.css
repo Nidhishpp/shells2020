@@ -9,6 +9,10 @@
     border-radius: 10px;
 }
 
+b, strong {
+    font-weight: bold;
+}
+
 /* Header Css */
 .navbar-brand img {
     height: 80px;
@@ -152,6 +156,11 @@
 }
 
 /* Event Details Css */
+
+.rules li {
+    padding-left: 15px;
+}
+
 .rules li:before {
     content: '';
     display: inline-block;
@@ -159,6 +168,7 @@
     background-color: #838ca3;
     height: 2px;
     margin: 5px;
+    margin-left: -10px;
 }
 
 .event-model p {

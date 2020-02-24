@@ -87,8 +87,7 @@
                         <a href="" data-toggle="modal" data-target="#model6">
                             <div class="event-card" data-tilt>
                                 <div class="event-logo">
-                                    <img src="assets/img/events/photography-videomaking.png"
-                                        alt="photography-videomaking">
+                                    <img src="assets/img/events/photography-videomaking.png" alt="photography-videomaking">
                                 </div>
                                 <div class="event-title text-center">
                                     Photomontage
@@ -335,12 +334,41 @@
                 </div>
 
                 <div class="modal-body event-model">
-
+                    <p> <b>General Rules :</b></p>
                     <ul class="list-unstyled rules">
                         <li>One team per college(2 members).</li>
                         <li>The event consistes of two rounds.</li>
                         <li>The theme for photography round will be revealed on the day of the Shells.</li>
                         <li>The theme for video making round will be uploaded in the Shells Website on 26th Feb 2020
+                        </li>
+                    </ul>
+                    <p> <strong>Photography Rules :</strong></p>
+                    <ul class="list-unstyled rules">
+                        <li>All submitted photos must contain the original EXIF Meta data information (RAW).</li>
+                        <li>However there must be no borders, logos, copyright marks, identifying marks, or any other visible references and / or marks on the image.</li>
+                        <li>Basic editing, including colour enhancement, the use of filters, and cropping of the photo is acceptable, you have to submit the original and edited one separately, provided any such editing does not affect the authenticity and/or genuineness of the photo. </li>
+                        <li>Advanced editing used to create illusions, deceptions, and/or manipulations, and the adding and removing of significant elements within the frame is prohibited.</li>
+                        <li>There is no limitations for area, but will be checking the date and time of the photo taken.</li>
+                        <li>Mobile photography is also allowed.</li>
+                        <li><strong>Judging Criteria :</strong>
+                            <ul class="list-unstyled">
+                                <li>Judging criteria based on uniqueness, colour, exposure, creativity, composition, etc.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p> <strong>Videography Rules :</strong></p>
+                    <ul class="list-unstyled rules">
+                        <li>The video must be of 1 minute.</li>
+                        <li>Format: the films may be short in MPEG4 or AVI format. </li>
+                        <li>The medium of the language must be English.</li>
+                        <li>There is no limitations for locations.</li>
+                        <li>Mobile videography is also allowed.</li>
+                        <li>Team members are encouraged to be filmed in the movie.</li>
+                        <li>Laptops are mandatory with appropriate softwares for this event.</li>
+                        <li><strong>Judging Criteria :</strong>
+                            <ul class="list-unstyled">
+                                <li>Judging criteria based on composition, framing, camera angle, editing, storyboard, etc.</li>
+                            </ul>
                         </li>
                     </ul>
                     <p>Student Coordinator</p>
@@ -404,6 +432,7 @@
                         <li>Languages: C,C++ and java</li>
                         <li>Any number of contestants can participate from one college.</li>
                         <li>Not allowed to participate in any other events.</li>
+                        <li>strong Participants are requested to bring their resume/CV.*</li>
                         <li>Participants should pay Rs.200 extra for this event.*</li>
                         <li>Participants should have 60% marks throughout their academics(From 10th to current
                             program).*</li>

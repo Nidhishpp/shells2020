@@ -14,7 +14,7 @@
                         <a href="events.php">Events</a>
                     </li>
                     <li class="footer-link">
-                        <a href="schedule.php">Schedule</a>
+                        <a href="assets/file/Shells 2020 - Schedule.pdf" download>Schedule</a>
                     </li>
                 </ul>
             </div>

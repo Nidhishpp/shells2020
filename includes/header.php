@@ -5,8 +5,7 @@
                 <img src="assets/img/logo/shells-logo.png">
                 SHELLS 2020
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
-                aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse" id="navbar_global">
@@ -18,9 +17,7 @@
                             </a>
                         </div>
                         <div class="col-6 collapse-close">
-                            <button type="button" class="navbar-toggler" data-toggle="collapse"
-                                data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false"
-                                aria-label="Toggle navigation">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
                                 <span></span>
                                 <span></span>
                             </button>
@@ -41,7 +38,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="schedule.php" class="nav-link" role="button">
+                        <a href="assets/file/Shells 2020 - Schedule.pdf" class="nav-link" role="button" download>
                             <span class="nav-link-inner--text">Schedule</span>
                         </a>
                     </li>
@@ -50,6 +47,34 @@
                             <span class="nav-link-inner--text">Register</span>
                         </a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-link-icon" href="#" target="_blank" data-toggle="dropdown">
+                            <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            <span class="nav-link-inner--text d-lg-none">Notifications</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-xl">
+                            <div class="dropdown-menu-inner">
+                                <a href="events.php" class="media d-flex align-items-center">
+                                    <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
+                                        <i class="fa fa-camera" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="media-body ml-3">
+                                        <h6 class="heading text-primary mb-md-1">Photomontage</h6>
+                                        <p class="description d-none d-md-inline-block mb-0">Video Making theme is out. Please check the event details to find it out.</p>
+                                    </div>
+                                </a>
+                                <a href="events.php" class="media d-flex align-items-center">
+                                    <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
+                                        <i class="fa fa-code" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="media-body ml-3">
+                                        <h6 class="heading text-primary mb-md-1">Haze Codification</h6>
+                                        <p class="description d-none d-md-inline-block mb-0">Participants are required to carry their resumes.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
                     <!-- <li class="nav-item dropdown">
                         <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
                             <i class="ni ni-ui-04 d-lg-none"></i>
@@ -57,8 +82,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-xl">
                             <div class="dropdown-menu-inner">
-                                <a href="https://demos.creative-tim.com/argon-design-system/docs/getting-started/overview.html"
-                                    class="media d-flex align-items-center">
+                                <a href="https://demos.creative-tim.com/argon-design-system/docs/getting-started/overview.html" class="media d-flex align-items-center">
                                     <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
                                         <i class="ni ni-spaceship"></i>
                                     </div>
@@ -68,8 +92,7 @@
                                             compiling Scss, change brand colors and more.</p>
                                     </div>
                                 </a>
-                                <a href="https://demos.creative-tim.com/argon-design-system/docs/foundation/colors.html"
-                                    class="media d-flex align-items-center">
+                                <a href="https://demos.creative-tim.com/argon-design-system/docs/foundation/colors.html" class="media d-flex align-items-center">
                                     <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
                                         <i class="ni ni-palette"></i>
                                     </div>
@@ -79,8 +102,7 @@
                                             typography, icons and the grid system we used for Argon.</p>
                                     </div>
                                 </a>
-                                <a href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html"
-                                    class="media d-flex align-items-center">
+                                <a href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html" class="media d-flex align-items-center">
                                     <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
                                         <i class="ni ni-ui-04"></i>
                                     </div>
@@ -92,7 +114,7 @@
                                 </a>
                             </div>
                         </div>
-                    </!-->
+                    </li> -->
                     <!-- <li class="nav-item dropdown">
                         <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
                             <i class="ni ni-collection d-lg-none"></i>
@@ -106,15 +128,13 @@
                         </div>
                     </li>  -->
                     <li class="nav-item">
-                        <a class="nav-link nav-link-icon" href="https://www.facebook.com/ShellsITfest" target="_blank"
-                            data-toggle="tooltip" title="Like us on Facebook">
+                        <a class="nav-link nav-link-icon" href="https://www.facebook.com/ShellsITfest" target="_blank" data-toggle="tooltip" title="Like us on Facebook">
                             <i class="fa fa-facebook-square"></i>
                             <span class="nav-link-inner--text d-lg-none">Facebook</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-icon" href="https://www.instagram.com/shells__2020/"
-                            target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
+                        <a class="nav-link nav-link-icon" href="https://www.instagram.com/shells__2020/" target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
                             <i class="fa fa-instagram"></i>
                             <span class="nav-link-inner--text d-lg-none">Instagram</span>
                         </a>

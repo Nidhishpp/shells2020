@@ -358,6 +358,11 @@
                     </ul>
                     <p> <strong>Videography Rules :</strong></p>
                     <ul class="list-unstyled rules">
+                        <li><strong>Theme :</strong>
+                            <ul class="list-unstyled">
+                                <li> <strong>“ADVERTISEMENT CAMPAIGN FOR FUTURE IoT PRODUCT”</strong></li>
+                            </ul>
+                        </li>
                         <li>The video must be of 1 minute.</li>
                         <li>Format: the films may be short in MPEG4 or AVI format. </li>
                         <li>The medium of the language must be English.</li>

@@ -9,7 +9,8 @@
     border-radius: 10px;
 }
 
-b, strong {
+b,
+strong {
     font-weight: bold;
 }
 
@@ -52,6 +53,10 @@ b, strong {
 
 .navbar-light .navbar-toggler {
     border-color: #1d47f4;
+}
+
+.dropdown-menu {
+    left: -23px;
 }
 
 /* Slider Css*/
@@ -151,7 +156,7 @@ b, strong {
     list-style: none;
 }
 
-.footer .footer-logo{
+.footer .footer-logo {
     height: 150px;
 }
 
